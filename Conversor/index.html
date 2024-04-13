@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>SMD</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de unidades del Sistema Métrico Decimal</h1>
+    </header>
+    <main>
+        <section>
+            <p>Bienvenid@, por favor seleccione las unidades correspondientes.</p>
+        </section>
+        
+        <section>
+            <h2>Peso</h2>
+            
+            <select name="pesoDado" id="pesoDado">
+                <option value="Kg">Kilogramo</option>
+                <option value="Hg">Hectogramo</option>
+                <option value="Dg">Decagramo</option>
+                <option value="g">Gramo</option>
+                <option value="dg">Decigramo</option>
+                <option value="cg">Centigramo</option>
+                <option value="mg">Miligramo</option>
+                <option value="km">Kilometros</option>
+                <option value="hm">Hectometros</option>
+                <option value="dam">Decametro</option>
+                <option value="m">Metro</option>
+                <option value="dm">Decimetro</option>
+                <option value="cm">Centimetro</option>
+                <option value="mm">Milimetro</option>
+            </select>
+
+            <label for="numeroP">Ingrese la magnitud</label>
+            <input type="number" min="0" placeholder="ej: 10" id="magnitudP">
+            <button onclick="obtenerPeso()">Conversión</button>
+
+            <select name="pesoDeseado" id="pesoDeseado">
+                <option value="Kg">Kilogramo</option>
+                <option value="Hg">Hectogramo</option>
+                <option value="Dg">Decagramo</option>
+                <option value="g">Gramo</option>
+                <option value="dg">Decigramo</option>
+                <option value="cg">Centigramo</option>
+                <option value="mg">Miligramo</option>
+                <option value="km">Kilometro</option>
+                <option value="hm">Hectometro</option>
+                <option value="dam">Decametro</option>
+                <option value="m">Metro</option>
+                <option value="dm">Decimetros</option>
+                <option value="cm">Centimetros</option>
+                <option value="mm">Milimetros</option>
+            </select>
+        
+            <label for="resultadoP">Resultado</label>
+            <input type="number" id="resultadoP" name="resultadoP" readonly>
+
+        </section>
+    </main>
+    <footer>César Arias y Angie Arias. 2024</footer>
+    <script src="JS/jotaese.js"></script>
+</body>
+</html>
